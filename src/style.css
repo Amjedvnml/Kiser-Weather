@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+}
+.card{
+    width: 98%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#srch{
+    width: 40px;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #d9fff9;
+    color: #777;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #edfdfb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 5px;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.weather-image{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 40px;
+    font-weight: 350;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 60px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.Humidity, .win{
+    font-size: 25px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left ;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+    display: none;
+}
+
+@media screen  and (max-width: 320px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container .card{
+        width: 320px;
+    }
+    .search input{
+        width: 20px;
+        height: 40px;
+    }
+    .search button{
+        width: 40px;
+        height: 40px;
+    }
+    #srch{
+        width: 30px;
+    }
+    .col #humi{
+        margin-left: -30px;
+    }
+    .col #wind{
+        margin-left: 15px;
+    }
+    .speed{
+        width: 70px;
+        font-size: 15px;
+    }
+    .details .col div #spee{
+        width: 86px;
+    }
+}
+@media screen  and (max-width: 375px) {
+    .container{
+        width: 100%;
+    }
+    .card{
+        width: 375px;
+        height: 615px;
+    }
+    .search {
+        margin-top: 30px;
+    }
+    .search input{
+        width: 80px;
+        height: 50px;
+    }
+    .search button{
+        width: 40px;
+        height: 40px;
+    }
+    #srch{
+        width: 30px;
+    }
+}
+@media screen  and (max-width: 425px) {
+    .card{
+        width: 425px;
+        height: 615px;
+    }
+    .search{
+        margin-top: 30px;
+    }
+    .search input{
+        height: 40px;
+    }
+    .search button{
+        width: 40px;
+        height: 40px;
+    }
+    #srch{
+        width: 30px;
+    }
+}

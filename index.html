@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiser Weather App</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="Enter City Name" spellcheck="false" class="search-bar">
+                <button class="btn"><img src="./assets/flat-search-icon_941526-9141-removebg-preview.png" alt="search"
+                        id="srch"></button>
+            </div>
+            <div class="error">
+                <p>Invalid City Name</p>
+            </div>
+            <div class="weather">
+                <img src="./assets/partly rainy.png" alt="Rainy" class="weather-image">
+                <h1 class="temp">24°c</h1>
+                <h2 class="city">New York</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="./assets/humidity.png" alt="humidity" id="humi">
+                        <div>
+                            <p class="humidity">60%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/wind.png" alt="wind" id="wind">
+                        <div>
+                            <p class="wind speed">10 KM/h</p>
+                            <p id="spee">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
